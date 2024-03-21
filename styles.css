@@ -1,0 +1,271 @@
+html {
+  font-family: Noticia sans-serif ;
+  min-height: 100vh;
+  max-width: 1280px;
+  background-color: aliceblue;
+  margin: 0 auto;
+
+}
+
+body {
+  margin: 0 auto;
+  background-color: azure;
+  border: 1px solid black;
+}
+.page-container {
+ 
+
+}
+.nav {
+
+
+}
+nav {
+  background-color:rgb(25, 11, 66);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px;
+  width: 100%;
+}
+nav .logo {
+  display: flex;
+  text-align: center;
+
+}
+nav .logo img {
+  height: 70px;
+  width: 70px;
+  border-radius: 40%;
+  padding: 8px;
+
+}
+.Company-name {
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+}
+
+nav ul {
+  color: whitesmoke;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+
+  
+  
+}
+nav ul li {
+  padding:20px 40px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  
+  background-color: rgb(25, 11, 66);
+
+}
+nav ul li:hover {
+  background-color:rgb(19, 2, 56); 
+  
+}
+nav ul li.active {
+  background-color: rgb(19, 2, 56);
+}
+
+@media all and (max-width:800px){
+ nav {
+  justify-content: flex-start;
+  width: 100%;
+ }
+ nav ul {
+  justify-content: space-between;
+  
+ }
+}
+
+@media all and (max-width:600px){
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul  {
+     flex-direction: column;
+    align-items: center ;
+    
+   
+  }
+  nav ul li {
+    align-items: stretch;
+    
+  }
+
+}
+.banner {
+ display:block;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ height: 450px;
+ background-image:url(//unsplash.it/900/450/?blur);
+ background-size: cover;
+ text-align: center;
+ padding-top:  200px;
+ background-color: #070736;
+
+}
+
+@keyframes appers {
+  from {
+    opacity: 0.0;
+    top: -100px;
+  }
+  to {
+    opacity: 1.0;
+    top: 0px;
+  }
+
+}
+.banner b { 
+  font-size: 40px;
+  justify-self: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  animation: appers 900ms ease-in-out 500ms forwards;
+}
+.banner p {
+  font-size: 20px;
+  
+  color: white;
+  text-align: center;
+   position: relative;
+  animation: appers 900ms ease-in-out 500ms forwards;
+}
+
+.maintext {
+  padding: 20px;
+  font-size: 22px;
+  text-align: center;
+}
+.subtext {
+  display: flex;
+  
+}
+.subtext div {
+  margin: 10px;
+  color: white;
+}
+.subtext .red {
+  background-color: #ff6464;
+  border: 5px solid white;
+  padding: 10px;
+  border-radius: 5%;
+ 
+}
+
+.subtext .yellow {
+  background-color: #f0a500;
+  border: 5px solid white;
+  padding: 10px;
+  border-radius: 5%;
+ 
+}
+
+.subtext .green {
+  background-color: #6eebc3;
+  border: 5px solid white;
+  padding: 10px;
+  border-radius: 5%;
+ 
+}
+
+.quate {
+  display: block;
+  background-color: #eeee;
+  text-align: center;
+  padding: 15px;
+  
+}
+.Projecttitle {
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+  background-color: azure;
+  font-family: sans-serif;
+  border-top: 5px solid #ddd;
+  border-bottom: 5px solid #ddd;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
+}
+.project {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #ddd;
+}
+.project h4 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    border-top: 2px solid #ddd;
+  border-bottom: 2px solid #a3a1a1;
+
+  }
+  .Project img {
+    transition: all 0.4ms ease-in-out;
+    width: 100%;
+    border-radius: 20px;
+  }
+  .project img:hover {
+    transform: scale(0.95);
+    opacity: 0.80;
+  }
+  .project button {
+    background-color: rgb(106, 236, 59);
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+  }
+  .project button:hover{
+    background-color: rgb(39, 202, 39);
+    transform: scale(0.90);
+  }
+
+  
+  
+
+@media all and (max-width:800px){
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+.form {
+  padding: 20px;
+  margin: 10px;
+  border-top: 2px solid #ddd;
+  border-top: 2px solid #ddd;
+  justify-content: center;
+}
+  
+  
+
+.footer {
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000012;
+  color: aliceblue;
+  padding: 20px;
+  text-align: center;
+}
